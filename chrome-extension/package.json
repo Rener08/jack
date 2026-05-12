@@ -1,0 +1,17 @@
+{
+  "name": "chrome-extension",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Chrome extension for scraping product data and exporting Excel with embedded images.",
+  "main": "index.js",
+  "scripts": {
+    "test": "node --test tests"
+  },
+  "keywords": [
+    "chrome-extension",
+    "excel",
+    "scraper"
+  ],
+  "author": "",
+  "license": "ISC"
+}

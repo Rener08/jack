@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Product Excel Exporter</title>
+    <link rel="stylesheet" href="./popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <section class="hero">
+        <p class="eyebrow">Current Page Export</p>
+        <h1>Product Excel Exporter</h1>
+        <p class="subtle" id="site-host">Waiting for active tab...</p>
+      </section>
+
+      <section class="panel">
+        <div class="status-row">
+          <span class="status-dot" id="status-dot"></span>
+          <span class="status-text" id="status-text">Idle</span>
+        </div>
+        <p class="summary" id="summary-text">Ready to scan the current product page.</p>
+      </section>
+
+      <section class="metrics">
+        <article>
+          <span class="metric-label">Products</span>
+          <strong id="metric-total">0</strong>
+        </article>
+        <article>
+          <span class="metric-label">Details</span>
+          <strong id="metric-details">0</strong>
+        </article>
+        <article>
+          <span class="metric-label">Images</span>
+          <strong id="metric-images">0</strong>
+        </article>
+        <article>
+          <span class="metric-label">Failed</span>
+          <strong id="metric-failed">0</strong>
+        </article>
+      </section>
+
+      <section class="actions">
+        <button id="start-button" class="primary">Start Scrape</button>
+        <button id="toggle-button" class="secondary" disabled>Pause</button>
+        <button id="export-button" class="secondary" disabled>Export Excel</button>
+      </section>
+
+      <section class="panel fine-print">
+        <p id="adapter-text">Adapter: generic</p>
+        <p id="exported-text">Last export: not yet</p>
+      </section>
+    </main>
+
+    <script src="./popup.js"></script>
+  </body>
+  </html>
