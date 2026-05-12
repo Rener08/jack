@@ -1,0 +1,4 @@
+interface:
+  display_name: "Scrape Product List to Excel"
+  short_description: "Scrape product lists into Excel"
+  default_prompt: "Use $scrape-product-list-to-excel to scrape an ecommerce category or product-list page into an Excel workbook with title, price, link, and embedded main images."
